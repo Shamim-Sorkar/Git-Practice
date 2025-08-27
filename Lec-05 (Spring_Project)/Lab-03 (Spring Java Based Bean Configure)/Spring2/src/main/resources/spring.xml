@@ -1,0 +1,20 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="alien" class="com.shamim.Alien" scope="singleton">
+        <property name="name" value="sorkar" />
+        <property name="comp">
+            <bean class="com.shamim.Laptop" scope="singleton" lazy-init="true">
+            </bean>
+        </property>
+    </bean>
+
+
+
+
+
+</beans>

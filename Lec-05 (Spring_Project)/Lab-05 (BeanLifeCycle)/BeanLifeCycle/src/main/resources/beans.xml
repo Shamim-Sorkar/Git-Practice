@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="beanAnnotation" class="com.shamim.BeanAnnotation">
+
+        <property name="laptop" ref="laptop" />
+
+    </bean>
+
+<!--    <bean id="beanInterface" class="com.shamim.BeanInterface">-->
+
+<!--        <property name="laptop" ref="laptop" />-->
+
+<!--    </bean>-->
+
+
+<!--    <bean id="xmlBLC" class="com.shamim.XmlBeanLifecycle" init-method="init" destroy-method="destroy" >-->
+
+<!--        <property name="laptop" ref="laptop" />-->
+
+<!--    </bean>-->
+
+    <bean id="laptop" class="com.shamim.Laptop" />
+
+
+</beans>
